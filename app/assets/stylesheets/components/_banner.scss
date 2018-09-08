@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,600,700,800,900|Roboto:400,100,300,700,500');
+
+
+
 .landing-banner {
   height: 105vh;
   width: 100%;
@@ -19,6 +23,16 @@
   font-family: "IBM Plex Sans";
   font-weight: bold;
   color: white;
+  font-size: 4em;
+  letter-spacing: 1px;
+}
+
+.landing-banner h2 {
+  font-family: "IBM Plex Sans";
+  font-weight: bold;
+  color: white;
+  font-size: 3em;
+  letter-spacing: 1px;
 }
 
 .landing-banner-gradient {

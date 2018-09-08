@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900|Roboto:400,100,300,700,500');
+
+
 .started-button {
   width: 20vw;
   background-color: rgba(196, 38, 38, 0.9);
@@ -14,4 +17,6 @@
 
 .nav-button {
   color: white;
+  letter-spacing: 1px;
+  font-family: "Roboto" !important;
 }
