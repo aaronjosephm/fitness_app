@@ -4,7 +4,7 @@
 .meal-banner  {
   height: 105vh;
   width: 100%;
-  background-image: asset-url("mealbanner.jpg");
+  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("mealbanner.jpg");
   opacity: 0.8;
   background-size: cover;
   background-size: center;
