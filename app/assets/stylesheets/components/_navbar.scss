@@ -49,6 +49,31 @@
   justify-content: space-between;
 }
 
+.navbar-wagon-right h1 {
+  color: rgba(196, 38, 38, 0.9);
+  font-size: 5em;
+  font-family: "IBM Plex Sans";
+  font-weight: bold;
+  margin-right: -11px;
+}
+
+.navbar-wagon-right h2 {
+  color: white;
+  font-size: 3em;
+  font-family: "IBM Plex Sans";
+  font-weight: bold;
+  margin-bottom: -13px;
+}
+
+.navbar-wagon-right h3 {
+  color: white;
+  font-size: 2em;
+  font-family: "IBM Plex Sans";
+  letter-spacing: 2px;
+  margin-bottom: -25px;
+  margin-left: 5px;
+}
+
 .navbar-wagon-left {
   width: 40%;
   display: flex;
