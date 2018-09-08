@@ -20,4 +20,12 @@
   color: white;
   letter-spacing: 1px;
   font-family: "Roboto" !important;
+  padding: 5px;
+}
+
+.nav-button:hover {
+  border-bottom: solid 5px;
+  border-top: solid 5px;
+  border-color: white;
+  transition: all 0.2s ease 0s;
 }
