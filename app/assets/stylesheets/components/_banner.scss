@@ -1,16 +1,24 @@
 .landing-banner {
   height: 105vh;
   width: 100%;
-  background-image: asset-url("banner_photo.png");
+  background-image: asset-url("victor-freitas-546919-unsplash.jpg");
   background-size: cover;
   background-size: center;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   z-index: 0;
   margin-bottom: 10px;
+  color: white;
+
+}
+
+.landing-banner h1 {
+  font-family: "IBM Plex Sans";
+  font-weight: bold;
+  color: white;
 }
 
 .landing-banner-gradient {
