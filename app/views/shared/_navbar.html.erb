@@ -1,24 +1,33 @@
 <div class="navbar-wagon">
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <h1>T</h1>
+    <%= link_to root_path do %>
+      <h1>T</h1>
+    <% end %>
     <h2>F</h2>
     <h3>ITNESS</h3>
 
   </div>
   <div class="navbar-wagon-left hidden-xs hidden-sm">
-
-    <div class="nav-button">
-      ABOUT
-    </div>
-    <div class="nav-button">
-      CONTACT
-    </div>
-    <div class="nav-button">
-      FITNESS
-    </div>
-    <div class="nav-button">
-      MEALPLANS
-    </div>
+    <%= link_to about_path do %>
+      <div class="nav-button">
+        ABOUT
+      </div>
+    <% end %>
+    <%= link_to contact_path do %>
+      <div class="nav-button">
+        CONTACT
+      </div>
+    <% end %>
+    <%= link_to fitness_path do %>
+      <div class="nav-button">
+        FITNESS
+      </div>
+    <% end %>
+    <%= link_to mealplans_path do %>
+      <div class="nav-button">
+        MEALPLANS
+      </div>
+    <% end %>
   </div>
 </div>
 
