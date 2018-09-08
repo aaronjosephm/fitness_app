@@ -38,7 +38,7 @@
 .contact-banner  {
   height: 105vh;
   width: 100%;
-  background-image: asset-url("victor-freitas-546919-unsplash.jpg");
+  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("banner3");
   background-size: cover;
   background-size: center;
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@
 .about-banner  {
   height: 105vh;
   width: 100%;
-  background-image: asset-url("banner3.jpg");
+  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("banner3");
   background-size: cover;
   background-size: center;
   background-repeat: no-repeat;
@@ -102,7 +102,7 @@
 .landing-banner {
   height: 105vh;
   width: 100%;
-  background-image: asset-url("banner2.jpg");
+  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("banner2");
   background-size: cover;
   background-size: center;
   background-repeat: no-repeat;
