@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,600,700,800,900|Roboto:400,100,300,700,500');
 
+.article-banner {
+
+  display: inline-grid;
+  text-align: center;
+  justify-content: center;
+  height: 40vh;
+  align-items: center;
+}
+
 
 .meal-banner  {
   height: 105vh;
@@ -100,7 +109,7 @@
 }
 
 .landing-banner {
-  height: 105vh;
+  height: 80vh;
   width: 100%;
   background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("banner2");
   background-size: cover;
