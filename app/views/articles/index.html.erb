@@ -1,19 +1,25 @@
 
 
-  <% @articles.each do |article| %>
-    <div class="article-title-container">
-      <div class="article-banner">
-        <h1> Blog of the day: </h1>
-        <h1><%= article.title.upcase %></h1>
-        <p>TYLER ROSANO | <%= article.created_at.strftime("%B %d, %Y") %></p>
+<% @articles.each do |article| %>
+  <div class="article-title-container">
+    <div class="article-banner">
+      <h1> Blog of the day: </h1>
+      <h1><%= article.title.upcase %></h1>
+      <p>TYLER ROSANO | <%= article.created_at.strftime("%B %d, %Y") %></p>
+    </div>
+  </div>
+  <div class="article-container">
+    <p><%= article.content %></p>
+
+    <form>
+      <div class="form-group">
+        <p style="text-align: left !important; text-decoration: underline !important;">Leave comment</p>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
-    </div>
-    <div class="article-container">
-      <p><%= article.content %></p>
-      <p style="text-align: left !important; text-decoration: underline !important;">Leave a comment</p>
-      <p style="text-align: left !important; text-decoration: underline !important;">View comments</p>
-      <p style="text-align: left !important; text-decoration: underline !important;">Past blogs</p>
-    </div>
-  <% end %>
+    </form>
+    <p style="text-align: left !important; text-decoration: underline !important;">Comments</p>
+    <p style="text-align: left !important; text-decoration: underline !important;">Past blogs</p>
+  </div>
+<% end %>
 
 
