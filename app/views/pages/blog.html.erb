@@ -1,5 +1,3 @@
-
-
 <div class="article-title-container">
   <div class="article-banner">
     <h1> Blog of the day: </h1>
@@ -10,7 +8,7 @@
 <div class="article-container">
   <p><%= @article.content %></p>
   <p style="text-align: left !important; text-decoration: underline !important;">Leave comment</p>
-  <%= simple_format(@question) do |f| %>
+  <%= simple_form_for([@article, @question]) do |f| %>
     <h2><%= f.input :content, wrapper_html: { class: 'banner-description' } %></h2>
     <%= f.submit "submit", class: "btn btn-primary" %>
   <% end %>
@@ -24,5 +22,3 @@
   <p style="text-align: left !important; text-decoration: underline !important;">Comments</p>
   <p style="text-align: left !important; text-decoration: underline !important;">Past blogs</p>
 </div>
-
-

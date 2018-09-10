@@ -9,43 +9,8 @@
   align-items: center;
 }
 
-
-.meal-banner  {
-  height: 105vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("mealbanner.jpg");
-  opacity: 0.8;
-  background-size: cover;
-  background-size: center;
-  background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
-  margin-bottom: 0;
-  color: white;
-}
-
-.meal-banner h1 {
-  font-family: "IBM Plex Sans";
-  font-weight: bold;
-  color: white;
-  font-size: 4em;
-  letter-spacing: 1px;
-}
-
-.meal-banner h2 {
-  font-family: "IBM Plex Sans";
-  font-weight: bold;
-  color: white;
-  font-size: 3em;
-  letter-spacing: 1px;
-  margin-top: -4em;
-}
-
 .contact-banner  {
-  height: 105vh;
+  height: 80vh;
   width: 100%;
   background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("banner3");
   background-size: cover;
@@ -77,7 +42,7 @@
 }
 
 .about-banner  {
-  height: 105vh;
+  height: 80vh;
   width: 100%;
   background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("banner3");
   background-size: cover;

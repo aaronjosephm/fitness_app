@@ -6,9 +6,13 @@ Rails.application.routes.draw do
 
   get '/contact', to: 'pages#contact'
 
-  get '/blog', to: 'articles#index'
+  get '/blogs', to: 'articles#index'
 
   get '/fitness', to: 'pages#fitness'
 
   get '/mealplans', to: 'pages#mealplans'
+
+  resources :articles do
+    resources :questions, only: [ :new, :create]
+  end
 end
