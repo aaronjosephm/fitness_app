@@ -20,3 +20,9 @@
   height: 40vh;
   color: white;
 }
+
+.vote {
+  display: flex;
+  justify-content: left;
+  letter-spacing: 15px;
+}
