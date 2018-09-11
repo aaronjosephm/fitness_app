@@ -30,13 +30,11 @@
         <div class="vote">
           <i class="far fa-thumbs-up">6</i>
           <i class="far fa-thumbs-down">6</i>
-          <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            replies
-          </a>
+          <p><a class="btn btn-primary" data-toggle="collapse" href=<%= "#multiCollapseExample" + question.id.to_s%> role="button" aria-expanded="false" aria-controls=<%= "multiCollapseExample" + question.id.to_s%>>replies</a>
 
         </p>
         </div>
-        <div class="collapse" id="collapseExample">
+        <div class="collapse multi-collapse" id=<%= "multiCollapseExample" + question.id.to_s%>>
           <div class="card card-body">
             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
           </div>
