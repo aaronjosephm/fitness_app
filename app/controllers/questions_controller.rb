@@ -12,15 +12,22 @@ class QuestionsController < ApplicationController
 
   def create
     @question = Question.new(question_params)
-    @question.article = Article.find(params[:article_id])
-    @article = @question.article
-    if @question.save
-      redirect_to blog_path
+    @question.title = @question.content
+    @question.update(article: Article.find(params[:article_id]))
+    # @question.article = Article.find(params[:article_id])
+    if @question.save!
+      redirect_to new_article_question_path(params[:article_id])
     else
       render :new
     end
   end
 
   def destroy
+  end
+
+  private
+
+  def question_params
+    params.require(:question).permit(:content)
   end
 end

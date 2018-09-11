@@ -1,0 +1,49 @@
+
+<% @article = Article.find(params[:article_id]) %>
+<div class="article-title-container">
+  <div class="article-banner">
+    <h1> Blog of the day: </h1>
+    <h1><%= @article.title.upcase %></h1>
+    <p>TYLER ROSANO | <%= @article.created_at.strftime("%B %d, %Y") %></p>
+  </div>
+</div>
+<div class="article-container">
+  <p><%= @article.content %></p>
+  <p style="text-align: left !important; text-decoration: underline !important;">Leave comment</p>
+  <%= simple_form_for([@article, @question]) do |f| %>
+    <%= f.input :content, label: false, as: :text, autofocus: true, :input_html => {:style => 'width: 100%', :rows => 5, class: 'form-control'} %>
+    <br>
+    <div class="text-left">
+      <%= f.submit "submit", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+  <p style="text-align: left !important; text-decoration: underline !important;">Comments:</p>
+
+  <table class="table" style="text-align: left;">
+  <tbody>
+    <% @questions = Question.all %>
+    <% @questions.each do |question| %>
+    <tr>
+
+      <td><p><%= question.created_at.strftime("%B %d, %Y") %></p><p><%= question.content %></p></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+  <% @questions = Question.all %>
+  <% @questions.each do |question| %>
+    <div class="text-left">
+    <p><%= question.content %></p>
+    <P>replies</p>
+    <% @replies = Answer.all %>
+    <% @replies.each do |reply| %>
+      <% if reply.question_id = question.id %>
+        <p><%= reply.content %></p>
+      <% end %>
+    <% end %>
+  </div>
+  <% end %>
+  <p style="text-align: left !important; text-decoration: underline !important;">Past blogs</p>
+</div>
+
+
